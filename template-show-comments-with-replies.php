@@ -43,7 +43,6 @@ $comment_query = new WP_Query( $args );
 				<th>Post</th>
 				<th>Comment ID</th>
 				<th>Comment text</th>
-				<th>Reply count</th>
 			</tr>
 		<?php while ( $comment_query->have_posts() ) : $comment_query->the_post();
 				$args = 'post_id=' . get_the_ID();
